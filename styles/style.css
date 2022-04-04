@@ -1,0 +1,399 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-out;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 7px 75px;
+    background-color: #8d0003;
+    color: whitesmoke;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: #8d0003;
+    font-weight: bold;
+}
+
+.frontpage {
+    position: relative;
+    background: url(../img/hotel.jpg) no-repeat;
+    background-size: cover;
+}
+
+.frontpage::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.10);
+}
+
+
+/*Frontpage Navbar  */
+
+.frontpage #logo {
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+}
+
+.navbar {
+    padding-top: 14.5px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    /* text-decoration: none; */
+    display: flex;
+    padding: 12px;
+}
+
+.navbar #navbarmain li a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.navbar #navbarmain li a:hover {
+    color: #8d0003;
+    font-size: 17px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.social {
+    display: inline-block;
+    position: absolute;
+    right: 1.25rem;
+}
+
+.social img {
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.social li {
+    height: 30px;
+}
+
+.social #fb,
+#ig {
+    height: 22px;
+    opacity: 0.75;
+    margin-top: 3px;
+}
+
+.social #lnkd {
+    height: 24px;
+    opacity: 0.75;
+    margin-top: 3px;
+}
+
+.social #git {
+    height: 35px;
+    padding-bottom: 5px;
+    opacity: 0.75;
+}
+
+a img:hover {
+    cursor: pointer;
+    filter: invert();
+}
+
+
+/* Frontpage Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 715px;
+    font-size: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 495px;
+    font-weight: bolder;
+    color: #943a3a;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentsum1 {
+    color: #943a3a;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 12px;
+    font-weight: bolder;
+}
+
+
+/* Kitchen */
+
+.kitchen #intro {
+    text-align: center;
+    font-size: 50px;
+    margin: 18px;
+}
+
+.kitchen #sum1,
+#sum2 {
+    text-align: center;
+    font-size: 18px;
+    color: #8d0003;
+    margin: 18px;
+}
+
+.kitchen #sum2 {
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+.foodbox {
+    display: flex;
+    margin: 12px;
+    flex-direction: row;
+}
+
+.foodcolumn .fooddesc {
+    color: #8d0003;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.foodcolumn div:hover {
+    background-color: rgba(240, 240, 240, 0.945);
+    /* border: 2px solid red; */
+    border-radius: 34px;
+}
+
+.foodbox div {
+    flex-wrap: wrap;
+}
+
+.foodbox img {
+    width: 95%;
+    padding: 30px;
+    border-radius: 53px;
+}
+
+.foodbox .foodcolumn {
+    box-sizing: border-box;
+    margin-left: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Rooms */
+
+.rooms #rintro {
+    text-align: center;
+    font-size: 50px;
+    margin: 18px;
+}
+
+.rooms #rsum1,
+#rsum2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 18px;
+    color: #8d0003;
+}
+
+.rooms #rsum2 {
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+
+/* Room Details   */
+
+.roomspic {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.roomspic img {
+    width: 47%;
+    padding: 30px;
+}
+
+.rdesc {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 32px;
+    padding-right: 22px;
+    font-size: 18px;
+}
+
+#r1,
+#r3 {
+    flex-direction: row;
+}
+
+#r2,
+#r4 {
+    flex-direction: row-reverse;
+}
+
+
+/* ABout Us */
+
+.aboutpic {
+    position: relative;
+}
+
+.aboutpic::before {
+    content: "";
+    background: rgb(233, 233, 233);
+    position: absolute;
+    height: 26.7rem;
+    width: 94.7rem;
+    z-index: -1;
+}
+
+.about #aintro {
+    text-align: center;
+    font-size: 50px;
+    margin: 18px;
+}
+
+.about #asum1,
+#asum2 {
+    text-align: center;
+    font-size: 18px;
+    color: #8d0003;
+    margin: 18px;
+}
+
+.about #asum2 {
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+.aboutpic {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.aboutpic img {
+    width: 47%;
+    padding: 30px;
+}
+
+.adesc {
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 96px;
+    font-size: 18px;
+}
+
+.aboutpic .btn {
+    display: flex;
+    justify-content: left;
+}
+
+
+/* contact Us */
+
+.contdata {
+    position: relative;
+}
+
+.contdata::before {
+    content: "";
+    background: url(../socials/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.contact #cintro {
+    text-align: center;
+    font-size: 55px;
+    margin: 18px;
+}
+
+.contact #csum1,
+#csum2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 18px;
+    color: #8d0003;
+}
+
+.contact #csum2 {
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+.contdata {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contdata #form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px;
+    margin-top: 52px;
+}
+
+form input {
+    margin: 4px;
+    padding: 4px;
+}
+
+.cdesc {
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.contdata .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contdata form div {
+    padding: 4.5px;
+}
+
+footer {
+    background-color: #8d0003;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+    padding-top: 7px;
+}

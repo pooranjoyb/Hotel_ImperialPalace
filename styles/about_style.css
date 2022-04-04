@@ -1,0 +1,173 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    margin-right: 79px;
+}
+
+button {
+    padding: 7px 75px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: whitesmoke;
+}
+
+.frontpage {
+    position: relative;
+    background: url(../img/aboutpage.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.91;
+}
+
+.frontpage::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.14);
+    z-index: -1;
+}
+
+
+/*Frontpage Navbar  */
+
+.frontpage #logo {
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    filter: invert();
+}
+
+.navbar {
+    padding-top: 14.5px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    /* text-decoration: none; */
+    display: flex;
+    padding: 12px;
+}
+
+.navbar #navbarmain li a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.navbar #navbarmain li a:hover {
+    color: black;
+    font-size: 17px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.social {
+    display: inline-block;
+    position: absolute;
+    right: 1.25rem;
+}
+
+.social img {
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.social li {
+    height: 30px;
+}
+
+.social #fb,
+#ig {
+    height: 22px;
+    opacity: 0.75;
+    margin-top: 3px;
+    filter: invert();
+}
+
+.social #lnkd {
+    height: 24px;
+    opacity: 0.75;
+    margin-top: 3px;
+    filter: invert();
+}
+
+.social #git {
+    height: 35px;
+    padding-bottom: 5px;
+    opacity: 0.75;
+    filter: invert();
+}
+
+a img:hover {
+    cursor: pointer;
+}
+
+
+/* Frontpage Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-left: 380px;
+    padding-left: 138px;
+    padding-right: 320px;
+    padding-bottom: 495px;
+    font-weight: bolder;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+#head {
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    padding-top: 80px;
+    color: whitesmoke;
+    padding-left: 126px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footoer content */
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+    padding-top: 7px;
+}
