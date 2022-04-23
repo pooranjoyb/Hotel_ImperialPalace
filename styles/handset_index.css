@@ -1,0 +1,48 @@
+/* frontpage  */
+
+.frontpage {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.frontpage::before {
+    overflow: hidden;
+    position: absolute;
+}
+
+
+/* Navbar */
+
+.navbar #navbarmain {
+    position: relative;
+}
+
+
+/* Kitchen */
+
+.kitchen {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kitchen #intro {
+    display: inline-block;
+    text-align: center;
+    font-size: 65px;
+    margin: 18px;
+}
+
+
+/* Rooms */
+
+.roomspic #r1,
+#r2,
+#r3,
+#r4 {
+    flex-direction: column;
+}
