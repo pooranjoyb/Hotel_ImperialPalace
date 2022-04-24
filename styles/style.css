@@ -268,8 +268,8 @@ a img:hover {
     content: "";
     background: rgb(233, 233, 233);
     position: absolute;
-    height: 26.7rem;
-    width: 94.7rem;
+    height: 100%;
+    width: 100%;
     z-index: -1;
 }
 

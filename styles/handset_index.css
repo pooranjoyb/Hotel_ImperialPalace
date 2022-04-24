@@ -2,14 +2,39 @@
 
 .frontpage {
     overflow: hidden;
-    position: relative;
-    height: 100%;
-    width: 100%;
 }
 
-.frontpage::before {
-    overflow: hidden;
-    position: absolute;
+.frontpage .content {
+    font-size: 30px;
+    padding-left: 99px;
+    padding-right: 79px;
+}
+
+.frontpage #contentsum1 {
+    font-size: 20px;
+}
+
+@media screen and (max-width:530px) {
+    .frontpage #logo {
+        height: 43px;
+        top: 20px;
+        left: 8px;
+    }
+    .frontpage .content {
+        font-size: bolder;
+        padding: 20px 20px 20px 20px;
+        height: 488px;
+        padding-bottom: 368px;
+    }
+}
+
+@media screen and (max-width:395px) {
+    .frontpage .content {
+        font-size: 21px;
+    }
+    .frontpage #contentsum1 {
+        font-size: 17px;
+    }
 }
 
 
@@ -17,6 +42,25 @@
 
 .navbar #navbarmain {
     position: relative;
+}
+
+.navbar #navbarmain li a {
+    padding-left: 7px;
+    padding-right: 9px;
+}
+
+@media screen and (max-width: 765px) {
+    .navbar #navbarmain li a {
+        font-size: small;
+        padding: 5px;
+    }
+    .navbar .social {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 41px;
+        left: 114px;
+    }
 }
 
 
@@ -31,18 +75,89 @@
 }
 
 .kitchen #intro {
-    display: inline-block;
-    text-align: center;
-    font-size: 65px;
-    margin: 18px;
+    font-size: 45px;
+    margin: 4px;
+}
+
+.kitchen #sum2 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.kitchen .foodbox {
+    flex-direction: column;
+}
+
+.foodbox img {
+    width: 100%;
+}
+
+.foodbox .fooddesc {
+    font-weight: bold;
 }
 
 
 /* Rooms */
 
-.roomspic #r1,
+#r1,
 #r2,
 #r3,
 #r4 {
     flex-direction: column;
+}
+
+.rdesc {
+    padding-top: 6px;
+}
+
+.roomspic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms img {
+    width: 90%;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 17px;
+    margin-right: 20vh;
+    margin-left: 20vh;
+}
+
+.rooms .btn {
+    margin-bottom: 30px;
+}
+
+
+/*About */
+
+.aboutpic img {
+    width: 100%;
+    padding: 30px;
+}
+
+.aboutpic .adesc {
+    padding-top: 3px;
+}
+
+.aboutpic .adesc div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Contact */
+
+.contdata .cdesc {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    font-size: small;
 }
