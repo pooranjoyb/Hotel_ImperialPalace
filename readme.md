@@ -16,7 +16,7 @@ Open Gitbash
 
 Copy the following command to clone this repository in your local storage:
 ```
-https://github.com/pooranjoyb/hotel_imperialpalace.git
+https://pooranjoyb.github.io/Hotel_ImperialPalace/
 ```
 Hit the Enter key.
 
