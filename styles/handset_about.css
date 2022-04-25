@@ -1,0 +1,45 @@
+/*Front page*/
+
+.frontpage::before {
+    background: rgba(0, 0, 0, 0.49)
+}
+
+.content {
+    margin-left: 53px;
+    padding-right: 160px;
+}
+
+#head {
+    padding-left: 0px;
+}
+
+@media screen and (max-width: 848px) {
+    /* Navbar  */
+    .navbar #navbarmain li a {
+        font-size: 17px;
+        padding: 5px;
+    }
+    .navbar .social {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        top: 41px;
+        left: 1px;
+    }
+    .frontpage #logo {
+        display: flex;
+        height: 4%;
+        top: 89px;
+        align-items: center;
+        justify-content: center;
+        left: 44%;
+    }
+    /* Content  */
+    .content {
+        margin-left: -113px;
+        padding-right: 0px;
+    }
+}
