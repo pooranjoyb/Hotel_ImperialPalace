@@ -6,7 +6,7 @@ Welcome to a hotel website created using HTML &amp; CSS.
 Check out this project by cloning it to your PC using Gitbash or the Download/Clone button.
 
 **Using the link**
-https://pooranjoyb.github.io/hotel_imperialpalace/
+https://pooranjoyb.github.io/Hotel_ImperialPalace/
 
 Click here to open the link.
 
@@ -16,7 +16,7 @@ Open Gitbash
 
 Copy the following command to clone this repository in your local storage:
 ```
-https://github.com/pooranjoyb/hotel_imperialpalace.git
+https://pooranjoyb.github.io/Hotel_ImperialPalace/
 ```
 Hit the Enter key.
 
