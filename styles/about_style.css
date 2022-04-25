@@ -44,7 +44,7 @@ button:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.14);
+    background: rgba(0, 0, 0, 0.49);
     z-index: -1;
 }
 
