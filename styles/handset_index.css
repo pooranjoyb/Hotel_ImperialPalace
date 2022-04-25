@@ -26,6 +26,19 @@
         height: 488px;
         padding-bottom: 368px;
     }
+    .navbar #navbarmain li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .frontpage #logo {
+        filter: invert();
+        display: flex;
+        position: absolute;
+        left: 35vh;
+        margin-top: 54vh;
+    }
 }
 
 @media screen and (max-width:395px) {
@@ -51,7 +64,7 @@
 
 @media screen and (max-width: 765px) {
     .navbar #navbarmain li a {
-        font-size: small;
+        font-size: 17px;
         padding: 5px;
     }
     .navbar .social {
@@ -59,7 +72,10 @@
         flex-direction: row;
         position: absolute;
         top: 41px;
-        left: 114px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        left: 13px;
     }
 }
 
