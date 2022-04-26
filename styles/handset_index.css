@@ -26,9 +26,6 @@
         height: 488px;
         padding-bottom: 368px;
     }
-    .navbar #navbarmain li a {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 415px) {
@@ -36,7 +33,7 @@
         filter: invert();
         display: flex;
         position: absolute;
-        left: 35vh;
+        left: 31vh;
         margin-top: 54vh;
     }
 }
@@ -64,7 +61,7 @@
 
 @media screen and (max-width: 765px) {
     .navbar #navbarmain li a {
-        font-size: 17px;
+        font-size: small;
         padding: 5px;
     }
     .navbar .social {
