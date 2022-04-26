@@ -174,3 +174,10 @@
 footer {
     font-size: small;
 }
+
+@media screen and (max-width: 460px) {
+    footer {
+        font-size: smaller;
+        height: 45px;
+    }
+}
