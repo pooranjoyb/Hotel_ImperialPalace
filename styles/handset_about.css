@@ -16,7 +16,7 @@
     @media screen and (max-width: 848px) {
         /* Navbar  */
         .navbar #navbarmain li a {
-            font-size: 17px;
+            font-size: small;
             padding: 5px;
         }
         .navbar .social {

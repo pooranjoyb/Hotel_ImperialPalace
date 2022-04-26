@@ -171,3 +171,10 @@ footer {
     height: 35px;
     padding-top: 7px;
 }
+
+@media screen and (max-width: 460px) {
+    footer {
+        font-size: smaller;
+        height: 45px;
+    }
+}
