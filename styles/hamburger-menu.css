@@ -1,17 +1,21 @@
 .hamburger {
     display: none;
     cursor: pointer;
+    background-color: #b75750;
+    padding-top: 8px;
+    padding-bottom: 1.5px;
 }
 
 .bar {
     display: flex;
     width: 30px;
     height: 3px;
-    margin: 5px auto;
+    margin-bottom: 5px;
+    margin-top: 0px;
     margin-left: 25px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width:650px) {
@@ -28,20 +32,40 @@
         transform: translateY(-8px) rotate(135deg);
     }
     .navbar {
-        position: fixed;
-        left: -100%;
-        top: 70px;
+        display: flex;
+        position: absolute;
+        top: -100%;
         gap: 0;
-        flex-direction: column;
-        background-color: black;
+        background-color: #b75750;
         width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-    .navbar .navbarmain ul li {
-        flex-direction: column;
+        transition: 0.4s;
     }
     .navbar.active {
-        left: 0;
+        padding: 0;
+        top: -11px;
+    }
+    .navbar #navbarmain {
+        margin-bottom: 22px;
+    }
+    .navbar ul {
+        display: flex;
+        align-items: center;
+    }
+    .navbar .social ul {
+        display: flex;
+    }
+    .navbar .social {
+        display: flex;
+        top: 21px;
+    }
+    .social #fb,
+    #ig {
+        filter: invert();
+    }
+    .social #lnkd {
+        filter: invert();
+    }
+    .social #git {
+        filter: invert();
     }
 }
