@@ -44,10 +44,12 @@ button:hover {
 
 /*Frontpage Navbar  */
 
-.frontpage #logo {
+.frontpage .navbar #logo {
     height: 100px;
     display: inline-block;
     position: absolute;
+    left: 1.25rem;
+    padding-top: 22px;
 }
 
 .navbar {
