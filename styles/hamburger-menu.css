@@ -41,14 +41,20 @@
         gap: 0;
         background-color: #b75750;
         width: 100%;
-        transition: 0.4s;
+        transition: 0.4;
     }
     .navbar.active {
         padding: 0;
         top: -11px;
     }
+    #logo1 {
+        left: auto;
+        padding-top: 57px;
+        display: flex;
+        align-items: center;
+    }
     .navbar #navbarmain {
-        margin-bottom: 22px;
+        margin-bottom: 94px;
     }
     .navbar ul {
         display: flex;
