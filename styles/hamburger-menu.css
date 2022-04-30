@@ -1,9 +1,9 @@
 .hamburger {
     display: none;
     cursor: pointer;
-    background-color: #b75750;
     padding-top: 8px;
     padding-bottom: 1.5px;
+    background-color: #5591c7;
 }
 
 .bar {
@@ -21,6 +21,9 @@
 @media screen and (max-width:650px) {
     .hamburger {
         display: block;
+    }
+    .hamburger.active {
+        background-color: #b75750;
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
