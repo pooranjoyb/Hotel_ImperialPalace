@@ -44,21 +44,10 @@ button:hover {
 
 /*Frontpage Navbar  */
 
-<<<<<<< HEAD
-.frontpage .navbar #logo {
+.frontpage #logo {
     height: 100px;
     display: inline-block;
     position: absolute;
-    left: 1.25rem;
-    padding-top: 22px;
-=======
-#logo1 {
-    display: flex;
-    position: absolute;
-    height: 100px;
-    left: 1.25rem;
-    padding-top: 20px;
->>>>>>> improve-navbar
 }
 
 .navbar {
@@ -72,6 +61,7 @@ button:hover {
 
 .navbar ul {
     list-style: none;
+    /* text-decoration: none; */
     display: flex;
     padding: 12px;
 }
