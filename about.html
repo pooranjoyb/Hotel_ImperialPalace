@@ -10,13 +10,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/about_style.css">
     <link rel="stylesheet" media="screen and (max-width: 1369px)" href="styles/handset_about.css">
+    <style>
+        @media screen and (max-width: 850px) {
+            .hamburger {
+                display: none;
+                cursor: pointer;
+                padding-top: 8px;
+                padding-bottom: 1.5px;
+                background-color: #000000de;
+            }
+            .bar {
+                display: flex;
+                width: 30px;
+                height: 3px;
+                margin-bottom: 5px;
+                margin-top: 0px;
+                margin-left: 25px;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: rgb(255, 255, 255);
+            }
+            @media screen and (max-width:850px) {
+                .hamburger {
+                    display: block;
+                }
+                .hamburger.active {
+                    background-color: whitesmoke;
+                }
+                .hamburger.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .hamburger.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                    background-color: black;
+                }
+                .hamburger.active .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(135deg);
+                    background-color: black;
+                }
+                .navbar {
+                    display: flex;
+                    position: absolute;
+                    top: -100%;
+                    gap: 0;
+                    background-color: whitesmoke;
+                    width: 100%;
+                    transition: 0.4;
+                }
+                .navbar.active {
+                    padding: 0;
+                    top: 0px;
+                }
+                #logo1 {
+                    left: auto;
+                    display: flex;
+                    align-items: center;
+                    filter: invert();
+                    padding-top: 44px;
+                    padding-right: 12px;
+                }
+                .navbar #navbarmain {
+                    margin-bottom: 95px;
+                }
+                .navbar ul {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 0px;
+                }
+                .navbar #navbarmain li a {
+                    color: black;
+                }
+                .navbar .social ul {
+                    display: flex;
+                }
+                .navbar .social {
+                    display: flex;
+                    top: 21px;
+                }
+                .social #fb,
+                #ig {
+                    filter: none;
+                }
+                .social #lnkd {
+                    filter: none;
+                }
+                .social #git {
+                    filter: none;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     <div class="frontpage">
 
-        <img src="socials/logo.png" alt="" id="logo">
         <div class="navbar">
+            <div id="logo1">
+                <img src="socials/logo.png" alt="" id="logo">
+            </div>
             <ul id="navbarmain">
                 <li>
                     <a href="index.html">Home</a>
@@ -100,6 +197,7 @@
     <footer>
         Copyright &copy; pooranjoyb/Hotel_ImperialPalace All rights reserved.
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>

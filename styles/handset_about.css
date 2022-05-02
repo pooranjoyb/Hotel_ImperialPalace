@@ -29,13 +29,9 @@
             top: 41px;
             left: 1px;
         }
-        .frontpage #logo {
-            display: flex;
-            height: 4%;
-            top: 89px;
-            align-items: center;
-            justify-content: center;
-            left: 44%;
+        .frontpage #logo1 img {
+            height: 80px;
+            filter: invert();
         }
         /* Content  */
         .content {

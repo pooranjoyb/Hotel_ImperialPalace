@@ -51,10 +51,12 @@ button:hover {
 
 /*Frontpage Navbar  */
 
-.frontpage #logo {
-    height: 100px;
-    display: inline-block;
+#logo1 {
+    display: flex;
     position: absolute;
+    height: 100px;
+    left: 1.25rem;
+    padding-top: 20px;
     filter: invert();
 }
 
